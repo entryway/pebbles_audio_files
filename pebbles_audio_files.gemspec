@@ -12,6 +12,16 @@ Gem::Specification.new do |s|
   s.date = %q{2010-09-23}
   s.description = %q{See summary}
   s.email = %q{dev@entryway.net}
+  s.files = [
+    "Rakefile",
+     "VERSION",
+     "init.rb",
+     "lib/pebbles_audio_files/models/product.rb",
+     "lib/pebbles_audio_files/tasks.rb",
+     "pebbles_audio_files.gemspec",
+     "pebbles_audio_files.rb",
+     "rails/init.rb"
+  ]
   s.homepage = %q{http://github.com/entryway/pebbles_audio_files}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
