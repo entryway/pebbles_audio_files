@@ -15,11 +15,13 @@ Gem::Specification.new do |s|
   s.files = [
     "Rakefile",
      "VERSION",
+     "generators/pebbles_audio_files/USAGE",
      "generators/pebbles_audio_files/lib/insert_commands.rb",
      "generators/pebbles_audio_files/lib/rake_commands.rb",
      "generators/pebbles_audio_files/pebbles_audio_files_generator.rb",
      "generators/pebbles_audio_files/templates/audio_clip.rb",
      "generators/pebbles_audio_files/templates/migrations/create_audio_clips.rb",
+     "lib/generators/pebbles_audio_files_generator.rb",
      "lib/pebbles_audio_files/models/audio_clip.rb",
      "lib/pebbles_audio_files/models/product.rb",
      "lib/pebbles_audio_files/tasks.rb",
