@@ -1,5 +1,7 @@
 require File.expand_path(File.dirname(__FILE__) + "/lib/insert_commands.rb")
 require File.expand_path(File.dirname(__FILE__) + "/lib/rake_commands.rb")
+require 'rails_generator'
+require 'rails_generator/scripts/generate'
 
 class PebblesAudioFilesGenerator < Rails::Generator::Base
 
