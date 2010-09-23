@@ -1,10 +1,11 @@
 module PebblesAudioFiles::Models
 
-  module Product
+  module AudioClip
     def self.included(base)
       base.send(:extend, ClassMethods)
       base.send(:include, InstanceMethods)
-      base.has_many :audio_clips, :as => :audioable
+      
+      base.belongs_to :audioable, :polymorphic => true
     end
 
     module ClassMethods
