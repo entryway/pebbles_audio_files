@@ -6,7 +6,7 @@ class PebblesAudioFilesGenerator < Rails::Generator::Base
     record do |m|
       audio_clip_model = "app/models/audio_clip.rb"
       if File.exists?(audio_clip_model)
-        m.insert_into audio_clip_model, "include PebblesAudioClip::Models::AudioClip"
+        m.insert_into audio_clip_model, "include PebblesAudioFiles::Models::AudioClip"
       else
         m.directory File.join("app","models")
         m.file "audio_clip.rb", audio_clip_model
@@ -14,7 +14,7 @@ class PebblesAudioFilesGenerator < Rails::Generator::Base
 
       m.migration_template "migrations/create_audio_clips.rb",
         'db/migrate',
-        :migration_file_name => "pebbles_audio_files_create_audio_clips"
+        :migration_file_name => "create_audio_clips"
 
     end
   end

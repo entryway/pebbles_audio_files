@@ -1,3 +1,4 @@
+
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gemspec|
@@ -7,8 +8,8 @@ begin
     gemspec.email = "dev@entryway.net"
     gemspec.homepage = "http://github.com/entryway/pebbles_audio_files"
     gemspec.authors = ["Ryan Smith", "Bobby Wilson"]
-    gemspec.add_dependency 'pebbles'
   end
+  Jeweler::GemcutterTasks.new
 rescue LoadError
   puts "Jeweler not available. Install it with: gem install jeweler"
 end
