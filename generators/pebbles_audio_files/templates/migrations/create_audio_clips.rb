@@ -3,7 +3,7 @@ class CreateAudioClips < ActiveRecord::Migration
   def self.up
     create_table :audio_clips do |t|
       t.string :audio_file
-      t.references :audioable, :polymorphic => true
+      t.belongs_to :product
       t.timestamps
     end
   end

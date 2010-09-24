@@ -5,15 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = %q{pebbles_audio_files}
-  s.version = "1.0.0"
+  s.version = "1.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ryan Smith", "Bobby Wilson"]
   s.date = %q{2010-09-24}
-  s.default_executable = %q{rake}
   s.description = %q{See summary}
   s.email = %q{dev@entryway.net}
-  s.executables = ["rake"]
   s.files = [
     "Rakefile",
      "VERSION",
