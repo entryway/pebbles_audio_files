@@ -1,3 +1,5 @@
+require 'rails_generator'
+
 class PebblesAudioFilesGenerator < Rails::Generator::Base
 
   def manifest

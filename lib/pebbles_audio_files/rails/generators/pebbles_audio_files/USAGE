@@ -1,6 +1,0 @@
-Description:
-  Sets up the the extension
-
-Examples:
-  `./script/generate pebbles_audio_files`
-
