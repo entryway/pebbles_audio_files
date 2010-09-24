@@ -1,6 +1,8 @@
 module PebblesAudioFiles::Models
 
   module Product
+    unloadable
+
     def self.included(base)
       base.send(:extend, ClassMethods)
       base.send(:include, InstanceMethods)
