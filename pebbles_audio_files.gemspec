@@ -9,24 +9,25 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ryan Smith", "Bobby Wilson"]
-  s.date = %q{2010-09-23}
+  s.date = %q{2010-09-24}
   s.description = %q{See summary}
   s.email = %q{dev@entryway.net}
   s.files = [
     "Rakefile",
      "VERSION",
      "generators/pebbles_audio_files/USAGE",
-     "generators/pebbles_audio_files/lib/insert_commands.rb",
-     "generators/pebbles_audio_files/lib/rake_commands.rb",
      "generators/pebbles_audio_files/pebbles_audio_files_generator.rb",
      "generators/pebbles_audio_files/templates/audio_clip.rb",
      "generators/pebbles_audio_files/templates/migrations/create_audio_clips.rb",
-     "lib/generators/pebbles_audio_files_generator.rb",
      "lib/pebbles_audio_files/models/audio_clip.rb",
      "lib/pebbles_audio_files/models/product.rb",
      "lib/pebbles_audio_files/tasks.rb",
      "pebbles_audio_files.gemspec",
      "pebbles_audio_files.rb",
+     "rails/generators/pebbles_audio_files/USAGE",
+     "rails/generators/pebbles_audio_files/pebbles_audio_files_generator.rb",
+     "rails/generators/pebbles_audio_files/templates/audio_clip.rb",
+     "rails/generators/pebbles_audio_files/templates/migrations/create_audio_clips.rb",
      "rails/init.rb"
   ]
   s.homepage = %q{http://github.com/entryway/pebbles_audio_files}
