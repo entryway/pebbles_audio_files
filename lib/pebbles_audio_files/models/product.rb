@@ -5,7 +5,6 @@ module PebblesAudioFiles::Models
       base.send(:extend, ClassMethods)
       base.send(:include, InstanceMethods)
       base.class_eval do
-        unloadable
         has_many :audio_clips
       end
     end

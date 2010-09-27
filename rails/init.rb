@@ -1,4 +1,6 @@
-#require File.expand_path(File.dirname(__FILE__) + "/../pebbles_audio_files")
-require 'pebbles_audio_files'
-require 'rails_generator'
 Dir[File.dirname(__FILE__) + 'generators/**/*.rb'].each {|file| require file}
+
+config.to_prepare do
+  require_dependency 'pebbles_audio_files'
+  Product.send(:include, PebblesAudioFiles::Models::Product)
+end
